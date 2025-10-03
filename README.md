@@ -1,6 +1,6 @@
 # API de Dados de Municípios do Brasil
 
-Este projeto é uma API REST construída com FastAPI, que disponibiliza dados públicos sobre os municípios do Brasil, obtidos de fontes oficiais do governo federal. Os dados são armazenados localmente em um banco de dados SQLite utilizando SQLAlchemy como ORM.
+Este projeto é uma API REST construída com FastAPI, que disponibiliza dados públicos sobre os municípios do Brasil, obtidos de fontes oficiais do governo federal. Os dados são armazenados localmente em um banco de dados SQLite utilizando SQLAlchemy como ORM. 
 
 ## Funcionalidades
 
@@ -79,6 +79,11 @@ uvicorn main:app --reload
 A API estará disponível em:
 ```
 http://127.0.0.1:8000
+```
+
+Crie o usuario admin utilizando o arquivo `create_user_admin.py`. No terminal, dentro da pasta do projeto, execute: 
+``` python
+py create_user_admin.py
 ```
 
 ## Documentação Automática
