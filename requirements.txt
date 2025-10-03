@@ -1,0 +1,21 @@
+# Core API
+fastapi==0.103.2
+uvicorn[standard]==0.23.2
+
+# Banco de dados
+SQLAlchemy==2.0.23
+alembic==1.13.1
+
+# Segurança / autenticação
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-jose[cryptography]==3.3.0
+
+# Config e validação
+pydantic==2.5.2
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# Requisições externas
+requests==2.31.0
+pandas==2.1.1
