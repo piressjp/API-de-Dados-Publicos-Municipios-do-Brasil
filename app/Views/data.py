@@ -28,7 +28,7 @@ def sync_municipios_from_csv(db: Session = Depends(deps.get_db)):
     Baixa o CSV do portal (configurado via env DATASET_CSV_URL) e popula a tabela.
     Só para admin.
     """
-    csv_url = os.getenv("DATASET_CSV_URL")
+    csv_url = os.getenv("DATASET_CSV_URL", "https://www.gov.br/receitafederal/dados/municipios.csv")
     if not csv_url:
         raise HTTPException(status_code=400, detail="DATASET_CSV_URL não configurado")
     r = requests.get(csv_url)
