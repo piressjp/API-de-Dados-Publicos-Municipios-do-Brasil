@@ -66,6 +66,9 @@ Se desejar, você pode modificar o caminho do banco em context.py:
 DATABASE_URL = "sqlite:///./municipios.db"
 ```
 
+# Diagrama ER
+![Diagrama ER](docs/diagrama_er.png)
+
 ## Executando a API
 Para iniciar o servidor, execute:
 ``` 
